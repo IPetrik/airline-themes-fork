@@ -68,8 +68,8 @@ function! airline#themes#solarized#refresh()
     let s:N2 = [(s:tty ? s:base01 : s:base2), s:base1, '']
     let s:N3 = [s:base1, s:base2, '']
   endif
-  let s:NF = [s:orange, s:N3[1], '']
-  let s:NW = [s:base3, s:orange, '']
+  let s:NF = [s:yellow, s:N3[1], '']
+  let s:NW = [s:base3, s:yellow, '']
   if s:background == 'dark'
     let s:NM = [s:base1, s:N3[1], '']
     let s:NMi = [s:base2, s:N3[1], '']
@@ -79,7 +79,7 @@ function! airline#themes#solarized#refresh()
   endif
 
   " Insert mode
-  let s:I1 = [s:N1[0], s:yellow, 'bold']
+  let s:I1 = [s:N1[0], s:orange, 'bold']
   let s:I2 = s:N2
   let s:I3 = s:N3
   let s:IF = s:NF
